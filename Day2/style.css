@@ -1,0 +1,37 @@
+.heading1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  color: #51075b;
+}
+
+.desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  line-height: 40px;
+  color: #6eccaf;
+}
+
+a {
+  font-size: 30px;
+}
+
+/* 1px is 1/96th of an inch */
+
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: #51075b;
+    color: white;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+
+/* Top Right Bottom Left */
+
+.box2{
+
+    height: 400px;
+    background-image: url(/images/rcb.png);
+    background-repeat: no-repeat;
+    border: 20px solid black;
+}
