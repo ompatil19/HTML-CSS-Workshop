@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        background-color: aquamarine;
+        border: 2px solid black;
+        height: 3000px;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        border:2px solid black;
+        background-color: burlywood;
+        margin: 0px 10px;
+    }
+    #box3{
+        /* postion static by default */
+        /* positon relative absolute sticky fixed */
+
+        /* relative moves with respect to its initail position */
+        position: relative;
+        /* top: 30px;
+        left: 40px; */
+
+        /* fixed position is fixed with respect to parent container */
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+
+        
+    }
+    #box4{
+        /* sticky position  is relative to parent container*/
+        position: sticky;
+        top: 200px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cont{
+        /* background-color: brown; */
+    }
+    input{
+        margin-bottom: 50px;
+    }
+    #usn{
+        position: relative;
+        left: 100px;
+    }
+</style>
+<body>
+     <!-- <div class="container" id="parent">
+        children of container
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us!</div>
+        <div class="box" id="box4">4</div>
+    </div> -->
+    <div class="cont">
+        <form action="">
+            <div>
+
+                Name:<input type="text" name="" id="">
+            </div>
+            <div id="usn">
+
+                USN<input type="text" name="" id="">
+            </div>
+            <div>
+
+                Branch<input type="text" name="" id="">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
