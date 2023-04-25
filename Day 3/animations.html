@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container{
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        border: 2px solid red;
+        background-color: aquamarine;
+        animation-name: sliding;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes sliding{
+        0%{
+            top: 0;
+            left:0;
+            font-size: 10px;
+            /* transform: rotate(90deg); */
+            background-color: aqua;
+        }
+        25%{
+            top:0px;
+            left:300px;
+            font-size: 20px;
+            transform: rotate(90deg);
+            background-color: brown;
+        }
+        50%{
+            left:300px;
+            top:400px;
+            font-size: 30px;
+            transform: rotate(180deg);
+            background-color: burlywood;
+        }
+        75%{
+            top:400px;
+            left:800px;
+            font-size: 40px;
+            transform: rotate(270deg);
+            background-color: violet;
+        }
+        100%{
+            top:0;
+            left:0;
+            font-size: 10px;
+            background-color: aqua;
+        }
+    }
+</style>
+<body>
+    <div class="parent">
+
+        <div class="container">
+            <div class="box" id="box1">
+                <p> This is a animation </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
