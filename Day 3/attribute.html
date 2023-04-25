@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors and nThChild</title>
+
+    <style>
+
+        /* Attribute Selectors */
+        input[type='text']{
+            background-color: aqua;
+        }
+
+        input[type='email']{
+            background-color: black;
+        }
+
+        a[target]{
+            color: aquamarine;
+            font-weight: 900;
+            font-size: 25px;
+        }
+
+        a[target='_blank']{
+            color: red;
+        }
+
+        /* Nth child selector */
+
+        /* li:nth-child(32){
+            color: brown;
+        } */
+
+        /* Targetting even list items */
+
+        /* li:nth-child(even){
+            background-color: aqua;
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        li:nth-child(odd){
+            background-color: red;
+
+        } */
+
+
+        li:nth-child(3n+3){
+            background-color: aquamarine;
+        }
+
+
+        li:nth-child(4n+4){
+            background-color: brown;
+        }
+    /* 
+    
+        3n+3
+        when n = 0, 3 
+        when n = 1, 3+3 = 6
+        when n =2, 6+3 = 9
+    */
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <input type="email" placeholder="Enter your Email">
+        <br>
+    </form>
+
+    <a href="https://google.com" target="_blank">Go to Google</a>
+    <br>
+    <a href="https://facebook.com" target="_parent">Go to Facebook</a>
+    <br>
+    <a href="https://youtube.com">Go to Youtube</a>
+
+
+    <h2>This a demonstration of nth child selectors</h2>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+</body>
+</html>

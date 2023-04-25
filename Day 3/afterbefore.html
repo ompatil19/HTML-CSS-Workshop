@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After</title>
+
+    <style>
+        /* label::before{
+            content: "hi";
+            background-color: red;
+            width: 20px;
+        } */
+
+        label::after{
+            content: "*";
+            color: red;
+            width: 20px;
+            height: 20px;
+        }
+
+        p::before{
+            content: 'content';
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+
+        p::after{
+            content: "end";
+            background-color: blueviolet;
+            
+        }
+
+        input::after{
+            content: "hello";
+            background-color: green;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="">Name*</label>
+      <input type="text" />
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vero
+        odit amet. Facere odio nesciunt quod repellendus atque reiciendis neque
+        perspiciatis. Saepe veniam expedita amet culpa nulla sequi ex
+        doloremque!
+      </p>
+    </form>
+  </body>
+</html>

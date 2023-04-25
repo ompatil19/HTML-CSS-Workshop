@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Additional Selectors</title>
+
+    <style>
+
+
+        /* First Way */
+        div p{
+            color: green;
+            font-size: 30px;
+        }
+
+        a{
+            color: aqua;
+            text-decoration: none;
+        }
+
+        /* Second Way  */
+
+        div > a{
+            color: blue;
+        }
+
+        /* Third Way */
+
+        div + p{
+            color: orange;
+            font-size: 30px;
+        }
+
+
+
+    </style>
+  </head>
+
+  <!-- 
+
+                    body   (Ancestors)
+
+            div(parent)        a           div 
+
+        p   hr  a div(children)               p
+                    p
+ -->
+
+  <body>
+    <h1>Additional Selectors</h1>
+
+        <div class="box1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat saepe
+              deleniti eos commodi consectetur odio id repellendus debitis dolorem
+              accusantium, dignissimos voluptate distinctio nihil rerum quod
+              laudantium veritatis delectus dicta!
+            </p>
+
+            <a href="http://google.com">Click on me to go to Google</a>
+            <br>
+          </div>
+
+    <a href="http://facebook.com">Click on me to go to Facebook</a>
+    <div>
+
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+      reiciendis iure nemo a obcaecati enim aliquam molestiae. Cupiditate libero
+      odio quis eius nostrum minus accusamus dolorem qui impedit, quas iste
+      repellat officia illum hic expedita rerum explicabo dolore atque iusto
+      nobis, est blanditiis. Repellendus nam rem repellat, dolorem velit id!
+    </p>
+  </body>
+</html>

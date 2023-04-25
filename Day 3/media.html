@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      /* h1 {
+        text-align: center;
+        color: brown;
+        font-size: 70px;
+        font-weight: 900;
+      } */
+
+      .box1 {
+        width: 300px;
+        background-color: blue;
+        border: 10px solid black;
+        padding: 20px;
+      }
+
+      .box2 {
+        width: 300px;
+        background-color: purple;
+        border: 10px solid black;
+        padding: 20px;
+      }
+
+      .box3 {
+        width: 300px;
+        background-color: red;
+        border: 10px solid black;
+        padding: 20px;
+      }
+
+      .container{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+      }
+
+
+      @media (max-width: 1000px){
+        .box1{
+            background-color: orange;
+        }
+
+        .box2{
+            background-color: brown;
+        }
+      }
+
+      @media (max-width: 600px){
+        .container{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+      }
+      /* .demo {
+        margin: auto;
+        width: 800px;
+        height: 200px;
+        border: 5px solid brown;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+      } */
+
+      /* Max - width */
+
+      /* CSS Added when it becomes 1000px or less */
+      /* @media (max-width: 1000px){
+            h1{
+                color: black;
+                font-size: 30px;
+            }
+
+            .demo{
+                background-color: blueviolet;
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 600px){
+            h1{
+                color:yellow;
+                font-size: 20px;
+            }
+        } */
+
+      /* @media (min-width: 1000px){
+            body{
+                background-color: white;
+            }
+        } */
+
+      /* Min - width */
+    </style>
+  </head>
+  <body>
+    <!-- <h1>This is the demonstration of Media Queries</h1>
+
+    <div class="demo">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore obcaecati
+      excepturi dolor facilis ex fugiat numquam dicta iure, voluptatem saepe
+      dolore perspiciatis accusantium qui ut sed vel animi nulla corporis,
+      ducimus exercitationem adipisci iste eius! Tenetur similique vitae velit
+      officia eum. Vel facilis reiciendis nostrum, quasi atque accusantium odit
+      ipsum.
+    </div> -->
+    <div class="container">
+      <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+        nesciunt sequi optio sint? Molestiae perferendis totam esse labore illum
+        hic commodi ab voluptatibus quis ipsa animi aspernatur sunt veritatis,
+        quidem inventore. Numquam enim quod sed hic ex facere, similique
+        perferendis?
+      </div>
+      <div class="box2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure id animi,
+        veniam quibusdam repellat est dolore? Alias, veritatis eos. Possimus
+        nulla architecto tenetur obcaecati, sed aliquam, commodi provident
+        blanditiis odio dignissimos repellendus dolorem quasi dicta tempore.
+        Iusto delectus cupiditate ipsam.
+      </div>
+      <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut
+        minima nostrum possimus laudantium doloribus at assumenda explicabo
+        voluptatum totam expedita, ipsum ipsam suscipit maiores quos, nulla
+        delectus eius eaque cumque nisi saepe! Voluptates deserunt architecto
+        provident repellendus totam soluta.
+      </div>
+    </div>
+  </body>
+</html>
